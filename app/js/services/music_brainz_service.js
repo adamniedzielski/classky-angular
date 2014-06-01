@@ -1,6 +1,6 @@
 angular.module("app").factory("MusicBrainzService", function ($q, $http) {
 
-  var BASE_URL = 'http://musicbrainz.org/ws/2/artist/'
+  var BASE_URL = 'http://musicbrainz.org/ws/2/artist/';
 
   function getArtist(id) {
     var deferred = $q.defer();

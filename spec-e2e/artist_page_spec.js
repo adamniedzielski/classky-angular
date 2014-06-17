@@ -15,4 +15,10 @@ describe('Artist page', function () {
   it('should show a list of albums', function () {
     expect(element(by.css('ul.albums')).isPresent()).toBe(true);
   });
+
+  it('should link to Spotify next to each album', function () {
+    element.all(by.css('ul.albums li')).each(function (album) {
+      expect(album.isElementPresent(by.css('.spotify'))).toBe(true);
+    });
+  });
 });

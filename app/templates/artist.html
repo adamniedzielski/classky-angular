@@ -1,7 +1,8 @@
 <h1 class="artist-name">{{artist.name}}</h1>
 <ul class="albums">
-  <li ng-repeat="album in artist.albums">
-    {{album}}
+  <li ng-repeat="album in artist.albums" ng-controller="AlbumController">
+    {{album.title}}
+    <a class="spotify" ng-href="{{album.spotifyUrl}}" ng-show="album.spotifyUrl !== undefined">Spotify</a>
   </li>
 </ul>
 

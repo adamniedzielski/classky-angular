@@ -4,7 +4,7 @@ require('protractor/jasminewd');
 describe('Artist page', function () {
 
   beforeEach(function () {
-    browser.get('/artists');
+    browser.get('/#/artists');
     element(by.css('.artist-link')).click();
   });
 

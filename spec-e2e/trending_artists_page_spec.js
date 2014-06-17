@@ -4,7 +4,7 @@ require('protractor/jasminewd');
 describe('Trending artists page', function () {
 
   beforeEach(function () {
-    browser.get('/artists');
+    browser.get('/#/artists');
   });
 
   it('should show a list of artists', function () {

@@ -20,7 +20,7 @@ angular.module("app").factory("MusicBrainzService", function ($q, $http) {
 
   function processResponse(data) {
     var albums = _.map(data['release-groups'], function (album) {
-      return album.title;
+      return { title: album.title };
     });
 
     return {

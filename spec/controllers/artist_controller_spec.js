@@ -4,8 +4,8 @@ describe("ArtistController", function() {
   var artist = {
     name: 'AC/DC',
     albums: [
-      'Back in Black',
-      'High Voltage'
+      { title: 'Back in Black' },
+      { title: 'High Voltage' }
     ]
   }
 

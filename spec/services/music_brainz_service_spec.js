@@ -73,9 +73,9 @@ describe("MusicBrainzService - getArtist", function() {
   it("should return artist with name and his albums", function() {
     expect(result.name).toEqual('Jacquie Lee');
     expect(result.albums).toEqual([
-      "And I Am Telling You I’m Not Going (The Voice Performance)",
-      "Angel (The Voice Performance)",
-      "The Voice Within (The Voice Performance)"
+      { title: "And I Am Telling You I’m Not Going (The Voice Performance)" },
+      { title: "Angel (The Voice Performance)" },
+      { title: "The Voice Within (The Voice Performance)" }
     ]);
   });
 });

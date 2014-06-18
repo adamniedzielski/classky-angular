@@ -1,10 +1,10 @@
 
-<ul>
+<ul class="artist-list">
   <li ng-repeat="artist in artists" class="artist-link">
     <a ng-href="#/artists/{{artist.id}}">
-      <h4>
+      <h2 class="artist-name">
         {{artist.name}}
-      </h4>
+      </h2>
       <img ng-src="{{artist.image}}">
     </a>
   </li>

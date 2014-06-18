@@ -1,8 +1,13 @@
-<h1 class="artist-name">{{artist.name}}</h1>
-<ul class="albums">
-  <li ng-repeat="album in artist.albums" ng-controller="AlbumController">
-    {{album.title}}
-    <a class="spotify" ng-href="{{album.spotifyUrl}}" ng-show="album.spotifyUrl !== undefined">Spotify</a>
-  </li>
-</ul>
+<h2 class="artist-name">
+  {{artist.name}}
+</h2>
+<div class="artist-content">
+  <ul class="albums">
+    <li ng-repeat="album in artist.albums" ng-controller="AlbumController">
+      {{album.title}}
+      <a class="spotify" ng-href="{{album.spotifyUrl}}" ng-show="album.spotifyUrl !== undefined">Listen on Spotify</a>
+    </li>
+  </ul>
+  <span ng-show="artist.albums.length === 0">No albums, sorry!</span>
+</div>
 
